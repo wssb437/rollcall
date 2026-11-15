@@ -7,7 +7,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
-<title>随机点名</title>
+<meta name="author" content="吴函">
+<title>随机点名 · 吴函制作</title>
 <style>
   :root{
     --bg:#070a12;
@@ -234,9 +235,12 @@
   .empty{font-size:12px;color:#59647a;padding:8px 0}
 
   .foot{
-    flex:0 0 auto;text-align:center;font-size:10.5px;line-height:1.5;
+    flex:0 0 auto;display:flex;align-items:center;justify-content:center;gap:7px;
+    text-align:center;font-size:10.5px;line-height:1.5;
     color:#525d72;letter-spacing:.02em;padding-top:1px;
   }
+  .foot .dot{opacity:.55}
+  .foot .credit{color:#b9944e;font-weight:600;letter-spacing:.08em}
 
   /* ---------- toast ---------- */
   .toast{
@@ -369,7 +373,7 @@
     <div class="chips" id="chips"><span class="empty">还没有记录</span></div>
   </section>
 
-  <footer class="foot">名单和记录只保存在本机 · 空格键也能开始 / 停止</footer>
+  <footer class="foot"><span>记录只存本机</span><span class="dot">·</span><span class="credit">吴函 制作</span></footer>
 </div>
 
 <div class="toast" id="toast" role="status"></div>
